@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- MENÚ ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MI</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#experiencia">EXPERIENCIA</a></li>
+                <li><a href="#portafolio">PORTAFOLIO</a></li>
+            </ul>
+        </nav>
+        <button class="button" onclick="window.location.href=''">DESCARGAR CV</button>
+        <div class="nav-responsive">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/img/YO_FOTO-circular.png" alt="">
+            </div>
+            <h1>ANA MEDINA</h1>
+            <h2>Ingeniera de Sistemas - Desarrollador Web</h2>
+            <div class="redes">
+                <a href="https://discordapp.com/users/anam.9542"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://github.com/AnaMedinaAguirre"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ana-medina-ba5839269/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://t.me/Amedina14"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://wa.me/51918764329"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobre-mi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Ana Medina.</span> Apasionada por el mundo del desarrollo web y móvil, me encanta
+                mantenerme actualizada con las últimas tecnologías y tendencias. Mi objetivo es combinar creatividad y
+                habilidades técnicas parao frecer soluciones eficientes y atractivas, aportando valor a cualquier
+                empresa interesada en mi trabajo.</p>
+
+            <div class="fila">
+                <!--DATOS PERSONALES-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nacimiento</strong>
+                            14/02/2005
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 918 764 329
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            meymar1405@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Av. Perú Mz. O, Lt. 31, Los Cedros
+                        </li>
+                    </ul>
+                </div>
+
+                <!--INTERESES-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="skills-content section-content">
+            <h2>Skills</h2>
+
+            <h3 class="h3 section-title">¿Qué habilidades definen mi experiencia en desarrollo?</h3>
+
+            <p class="section-text">
+                Me apasiona desarrollar soluciones de software eficientes, escalables y fáciles de usar. Con mi
+                experiencia en lenguajes de programación, tecnologías web, bases de datos y herramientas de desarrollo,
+                creo interfaces intuitivas y responsivas que ofrecen experiencias fluidas para los usuarios. Mis
+                habilidades me permiten transformar ideas en aplicaciones funcionales y bien optimizadas.
+            </p>
+
+            <div class="skills-toggle" data-toggle-box>
+                <button class="toggle-btn active" data-toggle-btn>Lenguajes</button>
+                <button class="toggle-btn" data-toggle-btn>Bases de Datos</button>
+                <button class="toggle-btn" data-toggle-btn>Herramientas</button>
+                <button class="toggle-btn" data-toggle-btn>Web</button>
+            </div>
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+            <!--LENGUAJES DE PROGRAMACIÓN-->
+            <ul class="languages-list">
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">JavaScript</div>
+
+                        <div class="card-icon">
+                            <img src="/img/javascript.png" alt="JavaScript logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Python</div>
+                        <div class="card-icon">
+                            <img src="/img/python.png" alt="Python logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Java</div>
+                        <div class="card-icon">
+                            <img src="/img/java (1).png" alt="Java logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">PHP</div>
+                        <div class="card-icon">
+                            <img src="/img/php.png" alt="PHP logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">C++</div>
+                        <div class="card-icon">
+                            <img src="/img/c++.png" alt="C++ logo">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!--BASES DE DATOS-->
+            <ul class="databases-list">
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">MySQL</div>
+                        <div class="card-icon">
+                            <img src="/img/mysql.png" alt="MySQL logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">SQL Server</div>
+                        <div class="card-icon">
+                            <img src="/img/servidor-sql.png" alt="SQL Server logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">MongoDB</div>
+                        <div class="card-icon">
+                            <img src="/img/mongodb.png" alt="MongoDB logo">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!--HERRAMIENTAS DE DESARROLLO-->
+            <ul class="tools-list">
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Git</div>
+                        <div class="card-icon">
+                            <img src="/img/git.png" alt="Git logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">GitHub</div>
+                        <div class="card-icon">
+                            <img src="/img/github.png" alt="GitHub logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Visual Studio Code</div>
+                        <div class="card-icon">
+                            <img src="/img/vs-code.png" alt="Visual Studio Code logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Apache NetBeans</div>
+                        <div class="card-icon">
+                            <img src="/img/netbeans.png" alt="Apache NetBeans logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Xampp</div>
+                        <div class="card-icon">
+                            <img src="/img/xampp.png" alt="Xampp logo">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!--TECNOLOGÍAS WEB-->
+            <ul class="web-list">
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">HTML</div>
+                        <div class="card-icon">
+                            <img src="/img/html5.png" alt="HTML logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">CSS</div>
+                        <div class="card-icon">
+                            <img src="/img/css3.png" alt="CSS logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">WordPress</div>
+                        <div class="card-icon">
+                            <img src="/img/wordpress.png" alt="WordPress logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Hostinger</div>
+                        <div class="card-icon">
+                            <img src="/img/hostinger.png" alt="Hostinger logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Node.js</div>
+                        <div class="card-icon">
+                            <img src="/img/node-js.png" alt="Node.js logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">Django</div>
+                        <div class="card-icon">
+                            <img src="/img/django.png" alt="Django logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skill-card">
+                        <div class="tooltip">React</div>
+                        <div class="card-icon">
+                            <img src="/img/react.png" alt="React logo">
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!--SECCIÓN EXPERIENCIA-->
+    <section id="experiencia" class="experiencia">
+        <div class="contenido-seccion">
+            <h2>Experiencia</h2>
+            <div class="experiencia-item">
+                <div class="empresa-info">
+                    <!-- Imagen de la empresa -->
+                    <div class="empresa-imagen-container">
+                        <img src="img/Consigue-Ventas.png" alt="Consigue Ventas" class="empresa-imagen">
+                    </div>
+                    <div class="info-empresa">
+                        <h2>Información</h2>
+                        <p><strong>Nombre Empresa:</strong> Consigue Ventas</p>
+                        <p><strong>Rol:</strong> Desarrollador Web</p>
+                        <p><strong>Tiempo:</strong> 4 meses</p>
+                        <p><strong>Inicio:</strong> 26/11/2024</p>
+                        <p><strong>Fin:</strong> 31/03/2025</p>
+                        <button class="experiencia">Más Información</button>
+                    </div>
+                </div>
+                <div class="flecha-icono">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="responsabilidades">
+                    <h2>Mis Responsabilidades</h2>
+                    <ul>
+                        <li>Instalar y configurar plugins necesarios, como Elementor y otros complementos útiles.</li>
+                        <li>Diseñar páginas web atractivas utilizando Elementor y asegurar que los diseños se vean bien
+                            en dispositivos móviles, tablets y computadoras.</li>
+                        <li>Gestión de Contenido, comprimir y redimensionar imágenes.</li>
+                        <li>Colaborar con diseñadores, desarrolladores o clientes para implementar cambios.</li>
+                    </ul>
+                    <button class="experiencia">Ver más responsabilidades</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--SECCIÓN PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/img/elbuencontador.png" alt="">
+                    <div class="overlay">
+                        <h3>El Buen Contador</h3>
+                        <p>Consigue Ventas</p>
+                        <p>WordPress</p>
+                        <a href="https://elbuencontador.pe">Ver</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/estudiojuridicocarpio.png" alt="">
+                    <div class="overlay">
+                        <h3>Estudio Jurídico Carpio</h3>
+                        <p>Consigue Ventas</p>
+                        <p>WordPress</p>
+                        <a href="https://estudiojuridicocarpio.com">Ver</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/mastercleen.png" alt="">
+                    <div class="overlay">
+                        <h3>Master Cleen</h3>
+                        <p>Consigue Ventas</p>
+                        <p>WordPress</p>
+                        <a href="https://mastercleen.com">Ver</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/vital.png" alt="">
+                    <div class="overlay">
+                        <h3>Vital Wellness</h3>
+                        <p>Consigue Ventas</p>
+                        <p>WordPress</p>
+                        <a href="https://vitalwellnessbodyworkcenter.com">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
