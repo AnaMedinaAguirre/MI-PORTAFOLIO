@@ -683,3 +683,126 @@ html{
     margin-bottom: 0px;
 }
 
+
+/* Estilos para el menú responsive */
+.nav-responsive {
+    display: none; /* Ocultar por defecto */
+}
+
+@media (max-width: 768px) {
+    .nav-responsive {
+        display: block; /* Mostrar en dispositivos móviles */
+    }
+
+    .contenedor-header header nav {
+        display: none; /* Ocultar el menú principal */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #140C19;
+        padding: 20px;
+    }
+
+    .contenedor-header header nav.active {
+        display: block; /* Mostrar el menú cuando está activo */
+    }
+
+    .contenedor-header header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-header header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para la Sección de Inicio responsive */
+@media (max-width: 768px) {
+    .inicio .contenido-banner {
+        max-width: 90%; /* Ajustar el ancho del banner */
+        padding: 10px;
+    }
+
+    .inicio .contenido-banner h1 {
+        font-size: 32px; /* Reducir el tamaño del título */
+    }
+
+    .inicio .contenido-banner h2 {
+        font-size: 14px; /* Reducir el tamaño del subtítulo */
+    }
+
+    .inicio .contenido-banner .redes a {
+        margin: 20px 5px; /* Ajustar el margen de los íconos */
+    }
+}
+
+/* Estilos para la Sección "Sobre Mí" responsive */
+@media (max-width: 768px) {
+    .sobremi .fila {
+        flex-direction: column; /* Cambiar a una columna en móviles */
+    }
+
+    .sobremi .fila .col {
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    .sobremi .contenido-seccion p {
+        font-size: 16px; /* Reducir el tamaño del texto */
+    }
+
+    .sobremi .fila .col h3 {
+        font-size: 24px; /* Reducir el tamaño del título */
+    }
+}
+
+/* Estilos para la Sección "Skills" responsive */
+@media (max-width: 768px) {
+    .skills-toggle {
+        flex-direction: column; /* Cambiar a una columna en móviles */
+    }
+
+    .skills-toggle .toggle-btn {
+        width: 100%; /* Ocupar todo el ancho */
+        margin: 5px 0; /* Ajustar el margen */
+    }
+
+    .skill-card {
+        width: 60px; /* Reducir el tamaño de las tarjetas */
+        height: 60px;
+    }
+
+    .skill-card .tooltip {
+        font-size: 10px; /* Reducir el tamaño del tooltip */
+    }
+}
+
+/* Estilos para la Sección "Experiencia" responsive */
+@media (max-width: 768px) {
+    .experiencia-item {
+        flex-direction: column; /* Cambiar a una columna en móviles */
+    }
+
+    .empresa-info, .responsabilidades {
+        width: 100%; /* Ocupar todo el ancho */
+        margin-bottom: 20px; /* Ajustar el margen */
+    }
+
+    .flecha-icono {
+        display: none; /* Ocultar la flecha en móviles */
+    }
+}
+
+/* Estilos para la Sección "Portafolio" responsive */
+@media (max-width: 768px) {
+    .portafolio .galeria {
+        flex-direction: column; /* Cambiar a una columna en móviles */
+        align-items: center;
+    }
+
+    .portafolio .galeria .proyecto {
+        max-width: 100%; /* Ocupar todo el ancho */
+        margin: 10px 0; /* Ajustar el margen */
+    }
+}

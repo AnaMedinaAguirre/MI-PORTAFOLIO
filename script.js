@@ -32,3 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navResponsive = document.querySelector('.nav-responsive');
+    const nav = document.querySelector('#nav');
+
+    navResponsive.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+});
