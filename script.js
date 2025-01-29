@@ -33,11 +33,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const navResponsive = document.querySelector('.nav-responsive');
-    const nav = document.querySelector('#nav');
 
-    navResponsive.addEventListener('click', function() {
-        nav.classList.toggle('active');
-    });
-});
+let menuVisible = false;
+//función que oculta o muestra el menu
+function mostrarOcultarMenu(){
+    if(menuVisible){
+        document.getElementById("nav").classList ="";
+        menuVisible = false;
+    }else{
+        document.getElementById("nav").classList ="responsive";
+        menuVisible = true;
+    }
+}
+
+function seleccionar(){
+    //oculto el menu una vez que selecciono una opción
+    document.getElementById("nav").classList = "";
+    menuVisible = false;
+}
